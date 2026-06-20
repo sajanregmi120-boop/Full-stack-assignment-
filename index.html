@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajan Regmi | ePortfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">SR<span class="text-primary">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="demosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Demos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="demosDropdown">
+                            <li><a class="dropdown-item" href="#fullstack">Full Stack</a></li>
+                            <li><a class="dropdown-item" href="#html-demo">HTML</a></li>
+                            <li><a class="dropdown-item" href="#css-demo">CSS</a></li>
+                            <li><a class="dropdown-item" href="#bootstrap-demo">Bootstrap</a></li>
+                            <li><a class="dropdown-item" href="#js-demo">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <button class="btn btn-outline-primary ms-3" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Home Section -->
+    <header id="home" class="d-flex align-items-center hero-section">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-5 mb-md-0 hero-content animate-slide-up">
+                    <h5 class="text-primary fw-bold mb-3">Hello, I'm</h5>
+                    <h1 class="display-3 fw-bold mb-3">Sajan Regmi</h1>
+                    <h4 class="text-secondary mb-4 typing-text">Computer Systems Engineering Student</h4>
+                    <p class="lead mb-4">Motivated undergraduate student pursuing a BSc (Hons) at ISMT College, awarded by the University of Sunderland. Passionate about networking, cybersecurity, and secure computing.</p>
+                    <div>
+                        <a href="#contact" class="btn btn-primary btn-lg me-3">Contact Me</a>
+                        <a href="#about" class="btn btn-outline-secondary btn-lg">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center animate-fade-in">
+                    <!-- Placeholder for Profile Image, using a stylized element -->
+                    <div class="hero-image-wrapper mx-auto">
+                        <div class="hero-image-placeholder">
+                            <i class="fas fa-laptop-code fa-5x text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. About Me Section -->
+    <section id="about" class="py-5 bg-alt">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">About Me</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="fs-5">I am a passionate and motivated undergraduate student currently pursuing a University of Sunderland-awarded BSc (Hons) in Computer Systems Engineering at ISMT College.</p>
+                    <p class="fs-5">Based in Pokhara, Nepal, I possess a strong interest in networking, cybersecurity, emerging technologies, system administration, and secure computing. With hands-on field experience in data collection and public awareness campaigns, I blend technical aptitude with community engagement to deliver impactful results.</p>
+                    <div class="mt-4">
+                        <span class="badge bg-primary fs-6 me-2 mb-2">Networking</span>
+                        <span class="badge bg-primary fs-6 me-2 mb-2">Cybersecurity</span>
+                        <span class="badge bg-primary fs-6 me-2 mb-2">System Administration</span>
+                        <span class="badge bg-primary fs-6 me-2 mb-2">Tech Enthusiast</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. What is Full Stack Development? -->
+    <section id="fullstack" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">What is Full Stack Development?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm demo-card">
+                        <i class="fas fa-desktop fa-3x text-primary mb-3"></i>
+                        <h4 class="card-title">Front-End</h4>
+                        <p class="card-text text-muted">The visible parts of a website. It involves creating intuitive user interfaces and user experiences using HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm demo-card">
+                        <i class="fas fa-server fa-3x text-primary mb-3"></i>
+                        <h4 class="card-title">Back-End</h4>
+                        <p class="card-text text-muted">The server-side infrastructure. It involves handling logic, databases, server configuration, and APIs using languages like Python or C#.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4 border-0 shadow-sm demo-card">
+                        <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                        <h4 class="card-title">Databases</h4>
+                        <p class="card-text text-muted">Storage systems that house web application data. A full stack developer designs, queries, and maintains relational or NoSQL databases.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. HTML Demonstration -->
+    <section id="html-demo" class="py-5 bg-alt">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">HTML Demonstration</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="bg-dark rounded p-3 text-light code-block">
+<pre><code>&lt;!-- Semantic HTML Table --&gt;
+&lt;table border="1"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Language&lt;/th&gt;
+            &lt;th&gt;Type&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;HTML5&lt;/td&gt;
+            &lt;td&gt;Markup&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="demo-box p-4 border rounded bg-body">
+                        <h5 class="mb-3">Rendered Output:</h5>
+                        <table class="table table-bordered table-striped m-0">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Language</th>
+                                    <th>Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HTML5</td>
+                                    <td>Markup</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td>Programming</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CSS Demonstration -->
+    <section id="css-demo" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">CSS Demonstration</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+                    <div class="bg-dark rounded p-3 text-light code-block">
+<pre><code>/* CSS Hover & Animation Effects */
+.css-demo-button {
+    background: linear-gradient(45deg, #0d6efd, #0dcaf0);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+.css-demo-button:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(13,110,253,0.3);
+}</code></pre>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-1 text-center">
+                    <div class="demo-box p-5 border rounded bg-alt d-flex justify-content-center align-items-center h-100">
+                        <button class="css-demo-button border-0 fw-bold fs-5">Hover Me!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Bootstrap Framework Demonstration -->
+    <section id="bootstrap-demo" class="py-5 bg-alt">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Bootstrap 5 Components</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="text-center mb-4">Leveraging Bootstrap's powerful grid system, utility classes, and interactive components like this Accordion:</p>
+                    <div class="accordion shadow-sm" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Responsive Grid System
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Pre-styled Components
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    From alerts and modals to navbars and buttons, Bootstrap offers a wide range of pre-designed components that speed up development.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. JavaScript Demonstration -->
+    <section id="js-demo" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">JavaScript Demonstration</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <h4 class="card-title text-center mb-4">Interactive Character Counter</h4>
+                            <p class="text-muted text-center mb-4">Type in the box below to see real-time JavaScript DOM manipulation.</p>
+                            <textarea id="demo-textarea" class="form-control mb-3" rows="4" placeholder="Start typing here..."></textarea>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">Characters: <span id="char-count" class="text-primary">0</span>/100</span>
+                                <div class="progress w-50" style="height: 10px;">
+                                    <div id="char-progress" class="progress-bar bg-primary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <p id="char-warning" class="text-danger mt-2 d-none small">Character limit reached!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Skills Section -->
+    <section id="skills" class="py-5 bg-alt">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">My Skills</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4 class="mb-4"><i class="fas fa-code text-primary me-2"></i>Programming</h4>
+                    
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>Python</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar skill-bar" role="progressbar" data-width="85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>C & C#</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar skill-bar" role="progressbar" data-width="75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>JavaScript / HTML / CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar skill-bar" role="progressbar" data-width="80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <h4 class="mb-4"><i class="fas fa-network-wired text-primary me-2"></i>Technical & Systems</h4>
+                    
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>Networking & Troubleshooting</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar skill-bar bg-success" role="progressbar" data-width="90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>Cybersecurity Fundamentals</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar skill-bar bg-success" role="progressbar" data-width="80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>Photo & Video Editing (Premiere, FCP)</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar skill-bar bg-success" role="progressbar" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <h5 class="mb-3">Languages</h5>
+                    <span class="badge rounded-pill border border-primary text-primary fs-6 px-4 py-2 mx-1">Nepali (Native/Bilingual)</span>
+                    <span class="badge rounded-pill border border-primary text-primary fs-6 px-4 py-2 mx-1">English (B2 Upper-Intermediate)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Field Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Public Awareness Campaign & Field Outreach</h5>
+                            <h6 class="card-subtitle mb-3 text-primary">2026</h6>
+                            <p class="card-text">Led and participated in government event coordination, public service operations, and community engagement to raise public awareness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Household Census & Community Survey Operations</h5>
+                            <h6 class="card-subtitle mb-3 text-primary">2025 - 2026</h6>
+                            <p class="card-text">Conducted extensive field data collection, managing survey operations and supporting government programs directly within the community.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Government Door-to-Door Survey</h5>
+                            <h6 class="card-subtitle mb-3 text-primary">2025</h6>
+                            <p class="card-text">Successfully executed data collection initiatives through direct door-to-door interactions, ensuring accurate community representation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Education Section -->
+    <section id="education" class="py-5 bg-alt">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Education Background</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 card-hover">
+                        <div class="mb-3"><i class="fas fa-graduation-cap fa-3x text-primary"></i></div>
+                        <h5 class="fw-bold">Bachelor's Degree</h5>
+                        <p class="text-primary mb-1 fw-semibold">BSc IT (Computer Systems Engineering)</p>
+                        <p class="text-muted small mb-3">University of Sunderland<br>ISMT College (Pokhara / London)</p>
+                        <p class="card-text">Currently pursuing comprehensive studies in computer systems, networking, and security.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 card-hover">
+                        <div class="mb-3"><i class="fas fa-school fa-3x text-primary"></i></div>
+                        <h5 class="fw-bold">+2 Higher Secondary Education</h5>
+                        <p class="text-primary mb-1 fw-semibold">Computer Science (A Grade)</p>
+                        <p class="text-muted small mb-3">National Examinations Board, Nepal<br>Passed in 2025</p>
+                        <p class="card-text">Built a strong foundation in programming logic, computer architecture, and mathematics.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 card-hover">
+                        <div class="mb-3"><i class="fas fa-book-reader fa-3x text-primary"></i></div>
+                        <h5 class="fw-bold">SEE Examination</h5>
+                        <p class="text-primary mb-1 fw-semibold">Secondary Education Examination</p>
+                        <p class="text-muted small mb-3">Nepal<br>Passed in 2023</p>
+                        <p class="card-text">Completed basic level education with high academic standing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Awards & Certifications -->
+    <section id="awards" class="py-5">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Awards & Conferences</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100 bg-primary text-white p-2">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fas fa-award fa-4x me-4 opacity-75"></i>
+                            <div>
+                                <h4 class="card-title fw-bold">Best Volunteer Award</h4>
+                                <p class="card-text">Recognized for outstanding contribution in Government Door-to-Door Survey and Community Outreach Activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100 bg-secondary text-white p-2">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fas fa-globe-americas fa-4x me-4 opacity-75"></i>
+                            <div>
+                                <h4 class="card-title fw-bold">Model United Nations (MUN)</h4>
+                                <p class="card-text">UNO Committee Group Winner. Active participant in global policy and international relations discussions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. Contact Section -->
+    <section id="contact" class="py-5 bg-alt">
+        <div class="container py-4">
+            <h2 class="section-title text-center mb-5">Get In Touch</h2>
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="contact-info p-4 bg-body rounded shadow-sm h-100">
+                        <h4 class="mb-4">Contact Information</h4>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="contact-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width:50px; height:50px;">
+                                <i class="fas fa-map-marker-alt fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Location</h6>
+                                <p class="mb-0 text-muted">Pokhara, Kaski, Nepal</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="contact-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width:50px; height:50px;">
+                                <i class="fas fa-envelope fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Email</h6>
+                                <p class="mb-0 text-muted"><a href="mailto:regmisajan6@gmail.com" class="text-decoration-none text-muted">regmisajan6@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="contact-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width:50px; height:50px;">
+                                <i class="fas fa-phone fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Phone</h6>
+                                <p class="mb-0 text-muted"><a href="tel:+9779765947138" class="text-decoration-none text-muted">+977-9765947138</a></p>
+                            </div>
+                        </div>
+                        
+                        <hr class="my-4">
+                        <h6 class="fw-bold mb-3">Connect with me</h6>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-outline-primary rounded-circle" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-outline-primary rounded-circle" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn btn-outline-primary rounded-circle" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p class="mt-3 small text-muted">FB: Sajan Regmi | IG: _Sajan_regmi<br>Username: Sajanregmi9091</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form id="contactForm" class="p-4 bg-body rounded shadow-sm h-100" novalidate>
+                        <h4 class="mb-4">Send a Message</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">Please enter a valid email.</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                                <div class="invalid-feedback">Please enter a subject.</div>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button class="btn btn-primary btn-lg w-100" type="submit">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+                            </div>
+                            <div id="form-success" class="col-12 mt-3 d-none">
+                                <div class="alert alert-success">Message sent successfully! (Demo)</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <h3 class="fw-bold mb-3">Sajan Regmi</h3>
+            <p class="text-white-50 mb-4">BSc IT (Computer Systems Engineering) Student</p>
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="#" class="text-white-50 text-decoration-none hover-white fs-5"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white-50 text-decoration-none hover-white fs-5"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white-50 text-decoration-none hover-white fs-5"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-white-50 text-decoration-none hover-white fs-5"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="mb-0 text-white-50 small">&copy; 2026 Sajan Regmi. All Rights Reserved. Designed with HTML, CSS, JS & Bootstrap.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
